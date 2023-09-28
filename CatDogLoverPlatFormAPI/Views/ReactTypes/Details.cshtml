@@ -1,0 +1,24 @@
+﻿@model BussinessObjects.ReactType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ReactType</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReactType1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReactType1)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ReactTypeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

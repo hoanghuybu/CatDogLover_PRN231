@@ -1,0 +1,15 @@
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\bin\Debug\net5.0\BussinessObjects.deps.json
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\bin\Debug\net5.0\BussinessObjects.runtimeconfig.json
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\bin\Debug\net5.0\BussinessObjects.runtimeconfig.dev.json
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\bin\Debug\net5.0\BussinessObjects.dll
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\bin\Debug\net5.0\BussinessObjects.pdb
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.csproj.AssemblyReference.cache
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.AssemblyInfoInputs.cache
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.AssemblyInfo.cs
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.csproj.CoreCompileInputs.cache
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.dll
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\refint\BussinessObjects.dll
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.pdb
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\BussinessObjects.genruntimeconfig.cache
+E:\Tailieu\Ki8\PRN231\Group\CatDogLoverPlatForm\BussinessObjects\obj\Debug\net5.0\ref\BussinessObjects.dll
