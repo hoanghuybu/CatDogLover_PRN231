@@ -15,5 +15,6 @@ namespace BussinessObjects
         public bool Status { get; set; }
 
         public virtual Service Service { get; set; }
+        public virtual Item ServiceSchedulerNavigation { get; set; }
     }
 }

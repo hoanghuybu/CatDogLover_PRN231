@@ -44,6 +44,7 @@ namespace BussinessObjects
             {
                 optionsBuilder.UseSqlServer(configuration.GetConnectionString("CatDogLover"));
             }
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -180,7 +181,7 @@ namespace BussinessObjects
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Order__AccountId__36B12243");
+                    .HasConstraintName("FK__Order__AccountId__3C69FB99");
             });
 
             modelBuilder.Entity<OrderDetail>(entity =>
@@ -205,12 +206,12 @@ namespace BussinessObjects
                     .WithMany(p => p.OrderDetails)
                     .HasForeignKey(d => d.ItemId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__OrderDeta__ItemI__403A8C7D");
+                    .HasConstraintName("FK__OrderDeta__ItemI__4222D4EF");
 
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.OrderDetails)
                     .HasForeignKey(d => d.OrderId)
-                    .HasConstraintName("FK__OrderDeta__Order__3F466844");
+                    .HasConstraintName("FK__OrderDeta__Order__412EB0B6");
             });
 
             modelBuilder.Entity<Post>(entity =>
@@ -261,13 +262,19 @@ namespace BussinessObjects
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.CategoryId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Product__Categor__286302EC");
+                    .HasConstraintName("FK__Product__Categor__2C3393D0");
 
                 entity.HasOne(d => d.Post)
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.PostId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Product__PostId__276EDEB3");
+                    .HasConstraintName("FK__Product__PostId__2B3F6F97");
+
+                entity.HasOne(d => d.ProductNavigation)
+                    .WithOne(p => p.Product)
+                    .HasForeignKey<Product>(d => d.ProductId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Product__Status__2D27B809");
             });
 
             modelBuilder.Entity<React>(entity =>
@@ -337,7 +344,7 @@ namespace BussinessObjects
                     .WithMany(p => p.Services)
                     .HasForeignKey(d => d.PostId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Service__PostId__2D27B809");
+                    .HasConstraintName("FK__Service__PostId__31EC6D26");
             });
 
             modelBuilder.Entity<ServiceScheduler>(entity =>
@@ -361,7 +368,13 @@ namespace BussinessObjects
                 entity.HasOne(d => d.Service)
                     .WithMany(p => p.ServiceSchedulers)
                     .HasForeignKey(d => d.ServiceId)
-                    .HasConstraintName("FK__ServiceSc__Servi__31EC6D26");
+                    .HasConstraintName("FK__ServiceSc__Servi__36B12243");
+
+                entity.HasOne(d => d.ServiceSchedulerNavigation)
+                    .WithOne(p => p.ServiceScheduler)
+                    .HasForeignKey<ServiceScheduler>(d => d.ServiceSchedulerId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__ServiceSc__Statu__37A5467C");
             });
 
             OnModelCreatingPartial(modelBuilder);

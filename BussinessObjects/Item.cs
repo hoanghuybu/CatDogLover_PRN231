@@ -13,7 +13,10 @@ namespace BussinessObjects
         }
 
         public string ItemId { get; set; }
+        public int Price { get; set; }
 
+        public virtual Product Product { get; set; }
+        public virtual ServiceScheduler ServiceScheduler { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

@@ -18,5 +18,6 @@ namespace BussinessObjects
 
         public virtual Category Category { get; set; }
         public virtual Post Post { get; set; }
+        public virtual Item ProductNavigation { get; set; }
     }
 }
